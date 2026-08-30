@@ -1,0 +1,38 @@
+# Gradle and build outputs
+.gradle/
+build/
+app/build/
+app/release/
+
+# Kotlin / IDE
+.kotlin/
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+captures/
+
+# Local configuration
+local.properties
+
+# Keystores & files
+*.jks
+*.keystore
+
+# Signed APKs and Bundles
+*.apk
+*.aab
+
+# Native build outputs
+.cxx/
+
+# Heap dumps
+*.hprof
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
