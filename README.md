@@ -74,10 +74,20 @@ git clone https://github.com/abzgif/Android-Real-Mirror.git
 |---|---|
 | `CAMERA` | Access the front camera for the mirror viewfinder |
 | `RECORD_AUDIO` | Record audio during video capture |
-| `READ_MEDIA_IMAGES` / `READ_MEDIA_VIDEO` | Access gallery on Android 13+ |
-| `READ/WRITE_EXTERNAL_STORAGE` | Save photos/videos on older Android versions |
+| `WRITE_EXTERNAL_STORAGE` | Save photos/videos on legacy Android versions (Android 9 and below) |
 
-All permissions are requested at runtime with clear explanations. The app works 100% offline with zero data collection or tracking.
+All permissions are requested at runtime with clear explanations. On modern Android versions (Android 10+), photos and videos are saved directly to public MediaStore folders (`Pictures/RealMirror` and `Movies/RealMirror`) without needing broad storage permissions. The app works 100% offline with zero data collection or tracking.
+
+---
+
+## 📜 Privacy Policy
+
+Real Mirror takes user privacy seriously:
+- **No Data Collection** — We do not collect, store, transmit, or share any personal information, photos, videos, or audio.
+- **100% Offline** — The camera feed and microphone data are processed entirely on-device and never leave your phone.
+- **No Third-Party Analytics or Ads** — Zero tracking SDKs or advertising services.
+
+You can read our full [Privacy Policy](privacy-policy.html).
 
 ---
 

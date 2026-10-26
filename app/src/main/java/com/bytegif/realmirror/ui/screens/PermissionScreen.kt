@@ -152,13 +152,15 @@ fun PermissionScreen(
                         subtitle = "Required for video audio recording"
                     )
 
-                    Spacer(modifier = Modifier.height(14.dp))
+                    if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.P) {
+                        Spacer(modifier = Modifier.height(14.dp))
 
-                    DarkPermissionItem(
-                        icon = Icons.Rounded.PhotoLibrary,
-                        title = "Storage",
-                        subtitle = "Required for saving photos & videos to gallery"
-                    )
+                        DarkPermissionItem(
+                            icon = Icons.Rounded.PhotoLibrary,
+                            title = "Storage",
+                            subtitle = "Required for saving photos & videos on older Android versions"
+                        )
+                    }
                 }
             }
 
